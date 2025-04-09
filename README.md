@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- Logo space -->
+<div align="center">
+  <img src="public/logo.png" alt="Project Logo" width="200"/>
+
+  # Next.js + Tailwind Template
+  
+  A personal template project using Next.js and Tailwind CSS for quick project setup
+  
+  [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+  [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Bun](https://img.shields.io/badge/bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)
+</div>
+
+## Overview
+
+This is a custom template for quickly bootstrapping web applications using Next.js and Tailwind CSS. It provides a solid foundation for personal projects and can be used by others looking for a streamlined setup.
+
+## Features
+
+- ⚡ **Next.js** - React framework with server-side rendering
+- 💨 **Tailwind CSS** - Utility-first CSS framework
+- 📝 **TypeScript** - Type safety for your JavaScript
+- 🧩 **Components structure** - Organized components directory
+- 🪝 **Custom hooks** - Directory for reusable React hooks
+- 🛠️ **Setup script** - Automated project initialization with custom naming
+
+## Project Structure
+
+```
+project-root/
+├── .gitignore
+├── biome.json
+├── bun.lock
+├── components.json
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── setup.sh
+├── tsconfig.json
+└── src/
+    ├── app/
+    ├── components/
+    ├── hooks/
+    ├── lib/
+    └── services/
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Bun](https://bun.sh/) (recommended) or [Node.js](https://nodejs.org/)
+- Git
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+git clone https://github.com/jwar28/next-x-tailwind.git my-project
+cd my-project
+```
+
+2. Install dependencies:
+
+```bash
+bun install
+```
+
+3. Make the setup script executable and run it with your project name:
+
+```bash
+chmod +x ./setup.sh
+./setup.sh <new-project-name>
+```
+
+This script will:
+- Update the project name in package.json and other configuration files
+- Initialize a fresh Git repository
+- Set up everything you need to start developing
+
+4. Start the development server:
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your application will be available at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Tailwind Configuration
 
-## Learn More
+You can customize the Tailwind configuration in the `tailwind.config.ts` file.
 
-To learn more about Next.js, take a look at the following resources:
+### Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to modify the project structure to suit your needs. The current structure provides a good starting point for most applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This template can be deployed on various platforms:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Vercel](https://vercel.com/) (recommended for Next.js)
+- [Netlify](https://www.netlify.com/)
+- Any other platform that supports Next.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
